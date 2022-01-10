@@ -22,11 +22,11 @@ county_list = []
 county_votes = {}
 
 # 1: Create a county list and county votes dictionary.
-county_list = ["Arapahoe", "Denver", "Jefferson"]
-county_votes = {}
-county_votes["Arapahoe"] = 24801
-county_votes["Denver"] = 306055
-county_votes["Jefferson"] = 38855
+county_list = ["Arapahoe County", "Denver County", "Jefferson County"]
+county_votes["Arapahoe County"] = 24801
+county_votes["Denver County"] = 306055
+county_votes["Jefferson County"] = 38855
+
 
 # Track the winning candidate, vote count and percentage
 winning_candidate = ""
@@ -101,23 +101,23 @@ with open(file_to_save, "w") as txt_file:
     # 6a: Write a for loop to get the county from the county dictionary.
     for county_name in county_votes:
         # 6b: Retrieve the county vote count.
-        county_vote = county_votes.get(county_name)
+        count = county_votes.get(county_name)
 
         # 6c: Calculate the percentage of votes for the county.
-        county_vote_percentage = float(county_vote) / float(total_votes) * 100
+        county_percentage = float(count) / float(total_votes) * 100
 
          # 6d: Print the county results to the terminal.
-        county_results = (f"{county_name}: {county_vote_percentage:.1f}% ({county_vote:,})\n") 
-        print(county_results)
+        county_results = (f"{county_name}: {county_percentage:.1f}% ({count:,})\n") 
+        print(county_results, end="")
 
          # 6e: Save the county votes to a text file.
         txt_file.write(county_results)
 
          # 6f: Write an if statement to determine the winning county and get its vote count.
-        if (county_vote > greatest_voter_turnout) and (county_vote_percentage > greatest_percentage):
-            greatest_voter_turnout = county_vote
+        if (count > greatest_voter_turnout) and (county_percentage > greatest_percentage):
+            greatest_voter_turnout = count
             largest_county = county_name
-            greatest_percentage = county_vote_percentage
+            greatest_percentage = county_percentage
            
     # 7: Print the county with the largest turnout to the terminal.
     county_results = (

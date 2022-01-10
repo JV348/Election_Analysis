@@ -1,6 +1,7 @@
 # Add our dependencies 
 import csv 
 import os 
+
 # Assign a variable to load a frile from a path 
 file_to_load = os.path.join("Resources", "election_results.csv")
 #Assign a variable to save the file to a path 
@@ -81,8 +82,9 @@ with open(file_to_save, "w") as txt_file:
         f"Winning Percentage: {winning_percentage:.1f}%\n"
         f"-------------------------\n")
     print(winning_candidate_summary)
+
     # Save the winning candidate's name to the text file 
     txt_file.write(winning_candidate_summary)
-
+    
     
     

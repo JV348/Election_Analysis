@@ -17,21 +17,20 @@ total_votes = 0
 candidate_options = []
 candidate_votes = {}
 
-# County list and county votes
+# 1: County list and county votes
 county_list = [] 
 county_votes = {}
 
-# 1: Create a county list and county votes dictionary.
+# Create a county list and county votes dictionary.
 county_list = ["Arapahoe County", "Denver County", "Jefferson County"]
 county_votes["Arapahoe County"] = 24801
 county_votes["Denver County"] = 306055
 county_votes["Jefferson County"] = 38855
 
-
 # Track the winning candidate, vote count and percentage
 winning_candidate = ""
 winning_count = 0
-winning_percentage = 0
+winning_percentage = 0   
 
 # 2: Track the largest county and county voter turnout.
 largest_county = ""

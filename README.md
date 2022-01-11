@@ -77,6 +77,15 @@ Of the 381,711 votes casted, Stockham recieved 85,213, Doane recieved 11,606, an
 
 Diana DeGette was the winner of this election cycle, as she recieved 272,892 out of 381,711 votes (or 73.8% percent of total votes).
 
-### Election-Audit Summary: In a summary statement, provide a business proposal to the election commission on how this script can be used—with some modifications—for any election. Give at least two examples of how this script can be modified to be used for other elections.
+![First_segment](https://github.com/JV348/Election_Analysis/blob/3b461b83bb2548a4eb7385f5f617f6af479691b7/Resources/1_2.png)
 
-### Challenge Summary 
+![Second_segment](https://github.com/JV348/Election_Analysis/blob/3b461b83bb2548a4eb7385f5f617f6af479691b7/Resources/3_5.png)
+
+![Third_segment](https://github.com/JV348/Election_Analysis/blob/3b461b83bb2548a4eb7385f5f617f6af479691b7/Resources/6_8.png)
+
+![Election_analysis](https://github.com/JV348/Election_Analysis/blob/3b461b83bb2548a4eb7385f5f617f6af479691b7/Resources/election_analysis.png)
+
+### Election-Audit Summary: Regarding Future Use
+In retrospect, the code used for this analysis has come a long way and seen multiple iterations towards efficiency. It would be a shame to lay it to waste instead of finding further use for it. There are useful patterns involved that can be used again; in fact, there are notable similarities between the code used for county votes and the code used for candidate votes. 
+With simple modifications, this code could be refactored and reused for another election. Of course, we intend to market this analyis to the commission and all counties in Colorado for future election cycles (which would entail new candidates and county votes). Aside from that, future iterations could be used for larger datasets such as city and state voting data. Furthermore, other variables, such as dates or poll locations, can be added to the analysis script with little problem - so as to increase the possible use.  
+
